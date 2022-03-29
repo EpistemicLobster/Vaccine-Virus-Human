@@ -6,7 +6,7 @@ let chooseVirus = document.querySelector('.button2');
 let chooseHuman = document.querySelector('.button3');
 
 var div = document.createElement('div');
-output.textContent = "Play me human, if you dare!";
+output.textContent = "Ready to Play? Choose your weapon!";
 let playerSelection = '';
 let computerSelection = '';
 let arrayChoices = ['Vaccine', 'Virus', 'Human'];
@@ -14,7 +14,7 @@ let gameCounter = 0;
 let playerScore = 0;
 let computerScore = 0;
 let tieScore = 0;
-outputComputer.style.backgroundImage = "url('images/computer1.svg')";
+outputComputer.style.backgroundImage = "url('images/computerneutral.svg')";
 
 function game() {
     computerGenerator();
@@ -40,17 +40,20 @@ function determineWinner() {
     || playerSelection === 'Virus' && computerSelection === 'Human'
     || playerSelection === 'Human' && computerSelection === 'Vaccine') {
         output.textContent = 'Computer: You win.';
+        //outputComputer.style.backgroundImage = "url('images/computerangry.svg')";
         ++gameCounter;
         ++playerScore;
     } else if (computerSelection === 'Vaccine' && playerSelection === 'Virus' 
     || computerSelection === 'Virus' && playerSelection === 'Human'
     || computerSelection === 'Human' && playerSelection === 'Vaccine') {
         output.textContent = 'Compouter: I win!';
+        //outputComputer.style.backgroundImage = "url('images/computerhappy.svg')";
         ++gameCounter;
         ++computerScore;
 
     } else {
         output.textContent = 'Computer: It\'s a Draw';
+        //outputComputer.style.backgroundImage = "url('images/computerneutral.svg')";
         ++gameCounter;
         ++tieScore;
     }
@@ -80,12 +83,15 @@ function checkWinner () {
 
 
 function declareGame() {
-    outputComputer.style.backgroundImage = "url('images/computer1.svg')";
+    outputComputer.style.backgroundImage = "url('images/computerneutral.svg')";
     if(computerScore > playerScore) {
         output.textContent = `Compouter: I win the game!`;
+        outputComputer.style.backgroundImage = "url('images/computerhappy.svg')";
     } else if (playerScore > computerScore) {
         output.textContent = `Computer: You win the game. And now you shall pay.`;
+        outputComputer.style.backgroundImage = "url('images/computerangry.svg')";
     } else {
         output.textContent = `Computer: It's a draw game, there is no winner!`;
+        outputComputer.style.backgroundImage = "url('images/computerneutral.svg')";
     }
 }
