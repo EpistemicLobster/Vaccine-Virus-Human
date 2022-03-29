@@ -46,7 +46,7 @@ function determineWinner() {
     } else if (computerSelection === 'Vaccine' && playerSelection === 'Virus' 
     || computerSelection === 'Virus' && playerSelection === 'Human'
     || computerSelection === 'Human' && playerSelection === 'Vaccine') {
-        output.textContent = 'Compouter: I win!';
+        output.textContent = 'Computer: I win!';
         //outputComputer.style.backgroundImage = "url('images/computerhappy.svg')";
         ++gameCounter;
         ++computerScore;
@@ -85,7 +85,7 @@ function checkWinner () {
 function declareGame() {
     outputComputer.style.backgroundImage = "url('images/computerneutral.svg')";
     if(computerScore > playerScore) {
-        output.textContent = `Compouter: I win the game!`;
+        output.textContent = `Computer: I win the game!`;
         outputComputer.style.backgroundImage = "url('images/computerhappy.svg')";
     } else if (playerScore > computerScore) {
         output.textContent = `Computer: You win the game. And now you shall pay.`;

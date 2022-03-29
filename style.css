@@ -89,15 +89,15 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(177, 165, 165);
-    border: 2px solid rgb(105, 98, 98);
+    background-color: rgb(2, 2, 2);
+    border: 4px solid gray;
     width: 100px;
     height: 200px;
     margin-right: 25px;
 }
 
 #opticaldrive {
-    background-color: black;
+    background-color: rgb(175, 167, 167);
     width: 75px;
     height: 10px;
     margin-right: 25px;
@@ -114,6 +114,7 @@ body {
 }
 
 #pclogo {
+    color: rgb(175, 167, 167);
     text-align: center;
     font-size: 25px;
     height: 20px;
