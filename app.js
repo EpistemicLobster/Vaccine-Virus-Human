@@ -6,7 +6,7 @@ let chooseVirus = document.querySelector('.button2');
 let chooseHuman = document.querySelector('.button3');
 
 var div = document.createElement('div');
-output.textContent = "Ready to Play? Choose your weapon!";
+output.innerHTML = "Best out of five rounds.<br> Let's Play!";
 let playerSelection = '';
 let computerSelection = '';
 let arrayChoices = ['Vaccine', 'Virus', 'Human'];

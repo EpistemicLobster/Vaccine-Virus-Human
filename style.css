@@ -1,5 +1,6 @@
 html {
     background-color: darkgray;
+    font-family: 'Space Grotesk', sans-serif;
 }
 
 body {
@@ -23,16 +24,19 @@ body {
     height: 100px; 
     background-color: rgb(0, 0, 0);
     text-align: center;
-    font-family: monospace;
     color: white;
 }
 
-#tag {
-    font-size: 20px;
+#gamename {
+    margin-top: 15px;
+    font-size: 40px;
+    font-family: 'Rubik Glitch', cursive;
+    font-weight: 900;
 }
 
-#gamename {
-    font-size: 40px;
+#tag {
+    font-size: 15px;
+    font-family: 'Space Grotesk', sans-serif;
 }
 
 #container1 {
@@ -127,7 +131,6 @@ body {
     width: 800px;
     height: 200px;
     font-size: 25px;
-    font-family: monospace;
     font-weight: 500;
     color: white;
     text-align: center;
@@ -190,7 +193,7 @@ button {
     box-shadow: 7px 7px rgb(129, 129, 129);
     border: none;
     border-radius: 50px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Space Grotesk', sans-serif;
     font-size: 20px;
     font-weight: 600;
 
